@@ -1,3 +1,9 @@
+:root{
+    --margin: 20px;
+    --padding: 50px;
+    --height: 100px;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -37,15 +43,6 @@ body {
     margin-left: 25px;
 }
 
-.under-box{
-    height: 400px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("https://thumbs.dreamstime.com/b/vintage-style-brick-wall-textured-simple-background-wallpaper-pattern-vintage-style-brick-wall-textured-simple-background-175877314.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
 a {
     color: #ffffff;
     text-decoration: none;
@@ -57,3 +54,53 @@ div section{
     width: 25%;
 }
 
+.under-box{
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(https://wallpaperaccess.com/full/1128998.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box-2{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}   
+
+#css-snippet{
+    margin-bottom: var(--margin);
+    padding: var(--padding);
+    height: var(--height);
+    background-color: gray;
+    color: white;
+    margin-right: 50%;
+}
+
+#site-refactor{
+    margin-bottom: var(--margin);
+    padding: var(--padding);
+    height: var(--height);
+    background-color: gray;
+    color: white;
+    margin-left: 50%;
+}
+
+#my-first-website{
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 100px;
+    background-color: gray;
+    color: white;
+    margin-right: 50%;
+}
+
+#about-me{
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 100px;
+    background-color: gray;
+    color: white;
+    margin-left: 50%;
+}
