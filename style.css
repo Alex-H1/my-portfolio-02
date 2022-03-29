@@ -65,7 +65,7 @@ iframe{
     background-color: var(--background-color);
     padding: 25%;
     width: 350%;
-  box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
 }
 /* under header picure */
 .under-box{
@@ -80,6 +80,10 @@ iframe{
 .box-2{
     display: flex;
     flex-direction: column;
+}
+
+#css-snippet iframe{
+    height: 650px;
 }
 
 /* iframe description */
