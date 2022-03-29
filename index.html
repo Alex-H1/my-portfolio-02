@@ -1,24 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-        function dis(val){
-            document.getElementById("answer").value+=val
-        }
-
-        function solve(){
-            let x = document.getElementById("answer").value
-            let y = eval(x)
-            document.getElementById("answer").value = y
-        }
-
-        function clr(){
-            document.getElementById("answer").value=""
-        }
-    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <link rel="stylesheet" href="style.css">
     <title>my portfolio</title>
 </head>
@@ -49,59 +35,54 @@
         <section id="css-snippet">
             <iframe src=" https://alex-h1.github.io/mini-project-02/"></iframe>
         </section>
-        <section id="container">
-            <p>class content</p>
-        </section>   
-        <section id="site-refactor">
-            
+            <section class="container">
+                <h1>CSS Cheat Sheet</h1>
+                <div>
+                <p> click <a href="https://alex-h1.github.io/mini-project-02/">here</a> to see deployed website</p>
+                <p>click <a href="https://github.com/Alex-H1/mini-project-02.git">here</a> to see my github</p>
+            </section>
+        <section id="site-refactor">           
            <iframe src=" https://alex-h1.github.io/site-refactor/"></iframe>
         </section>
+        <section class="container">
+            <h1>Site Refactor</h1>
+            <div>
+            <p> click <a href="https://alex-h1.github.io/site-refactor/">here</a> to see deployed website</p>
+            <p>click <a href="https://github.com/Alex-H1/site-refactor.git">here</a> to see my github</p>
+        </section> 
         <section id="my-first-website">
             <iframe src=" https://alex-h1.github.io/my-new-website-mini-project/"></iframe>
         </section>
-        <section id="about-me">
-            <h1>About Me</h1>
-            <P></P>
-            <h1>Contact Info</h1>
-        </section>
+        <section class="container">
+            <h1>My First Website</h1>
+            <div>
+            <p> click <a href="https://alex-h1.github.io/my-new-website-mini-project/">here</a> to see deployed website</p>
+            <p>click <a href="https://github.com/Alex-H1/my-new-website-mini-project.git">here</a> to see my github</p>
+        </section> 
     </div>
 
-    <aside class="calculator">
-        <table>
-            <tr>
-            <td colspan="3"><input type="text" id="answer"/></td>
-            <td id="clear-button"><input type="button" value="c" onclick="clr()"/></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="1" onclick="dis('1')"/></td>
-                <td><input type="button" value="2" onclick="dis('2')"/></td>
-                <td><input type="button" value="3" onclick="dis('3')"/></td>
-                <td><input type="button"value="/" onclick="dis('/')"/></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="4" onclick="dis('4')"/></td>
-                <td><input type="button" value="5" onclick="dis('5')"/></td>
-                <td><input type="button" value="6" onclick="dis('6')"/></td>
-                <td><input type="button" value="-" onclick="disS('-')"/></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="7" onclick="dis('7')"/></td>
-                <td><input type="button" value="8" onclick="dis('8')"/></td>
-                <td><input type="button" value="9" onclick="dis('9')"/></td>
-                <td><input type="button" value="+" onclick="dis('+')"/></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="." onclick="dis('.')"/></td>
-                <td><input type="button" value="0" onclick="dis('0')"/></td>
-                <td><input type="button" value="=" onclick="solve()"/></td>
-                <td><input type="button" value="*" onclick="dis('*')"/></td>
-            </tr>
-        </table>
-
+    <aside class="aside">
+        <section id="about-me">
+            <h1>Alex Hernandez</h1>
+            <img src="https://clinicforspecialchildren.org/wp-content/uploads/2016/08/avatar-placeholder.gif" alt="my picture">
+            <p>
+                Hi, I'm Alex Hernandez I am a student in full stack. I am based in california on the central coast. My hobbies include riding my motorcycle and working on various projects.
+            </p> 
+        </section>
     </aside>
 
-    <footer>
-    </footer>
-
+    <footer class="box-1">
+       <h1>Contact Me</h1>
+        <table>
+            <tr>
+                <td>Email</td>
+                <td>Alexanderohernandez21@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Phone </td>
+                <td> ‪(805) 203-6494‬</td>        
+            </tr>
+        </table>
+    </footer>    
 </body>
 </html>

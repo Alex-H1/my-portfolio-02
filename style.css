@@ -2,6 +2,8 @@
     --margin: 40px;
     --padding: 60px;
     --height: auto;
+    --box-shadow: 10px 5px 5px rgba(125, 6, 172, 0.2), 0 6px 20px 0 rgba(63, 5, 156, 0.19);
+    --background-color: rgb(33, 78, 202);
 }
 
 * {
@@ -11,7 +13,7 @@
 }
 
 body {
-    background-color: #d9dcd6;
+   background-color: gray;
 }
 /* header */
 .box-1 {
@@ -60,6 +62,10 @@ iframe{
     width: 350%;
     border: 0;
     transform: translate(10px, 0px);
+    background-color: var(--background-color);
+    padding: 25%;
+    width: 350%;
+  box-shadow: var(--box-shadow);
 }
 /* under header picure */
 .under-box{
@@ -70,51 +76,55 @@ iframe{
     background-size: cover;
     background-position: center;
 }
-/* preview frames */
-.box-2 iframe{
-    background-color: rgb(33, 78, 202);
-    padding: 25%;
-    width: 350%;
-  box-shadow: 10px 5px 5px rgba(125, 6, 172, 0.2), 0 6px 20px 0 rgba(63, 5, 156, 0.19);
-}
 
 .box-2{
     display: flex;
     flex-direction: column;
 }
-/* project 1 */
-#css-snippet{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: static;
-    height: 700px;
-}
 
-#container{
+/* iframe description */
+.container{
     position: relative;
     display: inline-flex;
     align-self: center;
-    border: #ffffff solid;
-    margin-top: -200px;
+    margin-top: -34px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    border-top: solid 10px rgb(96, 13, 228);
+    color: white;
 }
 
-#site-refactor{
-
+.container a{
+    font-weight: bolder;
 }
 
-#my-first-website{
-
-}
-
-input[type="button"]{
-    background-color:lightblue;
-}
-
-#clear-button{
-    background-color:red;
-}
-
-.calculator{
+.aside{
+    padding: 20px;
+    clear: both;
     float: right;
+    width: 10%;
+    height: 100%;
+    background-color: var(--background-color);
+    margin-top: -116%;
+    box-shadow: -10px 5px 5px rgba(125, 6, 172, 0.2), 0 6px 20px 0 rgba(63, 5, 156, 0.19);
+}
+
+#about-me{
+    margin-bottom: 32px;
+    color: white;
+}
+
+#about-me p{
+    line-height: 20px;
+}
+
+img{
+    height: 60px;
+    width: 60px;
+}
+
+table{
+    table-layout: fixed;
+    width: 36%;
+    border-collapse: collapse;
 }
